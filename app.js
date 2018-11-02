@@ -1,4 +1,4 @@
-//app.js 小伙伴B
+//app.js 小伙伴B 我也要改
 App({
   onLaunch: function () {
     // 展示本地存储能力
