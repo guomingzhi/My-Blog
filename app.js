@@ -1,4 +1,4 @@
-//app.js 小伙伴B 再来一次
+//app.js 小伙伴B 我也要改 是时候提交第一次了那么第二次提交加上
 App({
   onLaunch: function () {
     // 展示本地存储能力
