@@ -1,4 +1,4 @@
-//app.js 小伙伴B
+//app.js 小伙伴B 再来一次
 App({
   onLaunch: function () {
     // 展示本地存储能力
