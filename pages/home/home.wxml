@@ -1,0 +1,37 @@
+<!--pages/home/home.wxml-->
+<view class = "container">
+  <view id = "header">
+    <image class = "header-headhumb" src = "{{userInfo.avatarUrl}}"></image>
+    <image class = "header-logo" src = "../../images/logo.png"></image>
+    <image class = "header-search" src = "../../images/header_search.png"></image>
+  </view>
+  <view class = "home-nav">
+    <view class = "home-nav-column" wx:for = "{{navList}}" bindtap='navSwitch' data-index = "{{index}}" style = "{{activeIndex === index ? 'color: #000' : ''}}" wx:key = "{{index}}">
+      {{item}}
+    </view>
+  </view>
+  <view class = "content">
+    <swiper indicator-dots="{{indicatorDots}}" current='{{activeIndex}}' bindchange = "swiperChange">
+      <block wx:for="{{navList}}" wx:key = "{{index}}">
+        <swiper-item>
+          <scroll-view scroll-y style = "height: 100%;">
+            <view class = "home-articleBox">
+              <image class = "home-articleBox-img" src = "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1425824082,567879678&fm=26&gp=0.jpg" mode = "aspectFill"></image>
+              <view class = "home-articleBox-title">
+                不一样的简约北欧风，面积不大却很实用
+              </view>
+              <view class = "home-articleBox-content">
+                这是只有80平的小户型,设计师为了最大的利用房间空间，让厨房和餐厅达成公用空间，在满足业主的需求下丫丫丫丫丫丫丫丫
+              </view>
+            </view>
+          </scroll-view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view id = "footer">
+    <image class = "footer-home" src = "../../images/footer_home.png"></image>
+    <image class = "footer-add" src = "../../images/footer_add.png"></image>
+    <image class = "footer-menu" src = "../../images/footer_menu.png"></image>
+  </view>
+</view>
